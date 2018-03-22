@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <title>Vending Machine Items Tracking</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Admin Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <h5>Created by: KMedinaTheDev</h5>
+        
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <h2>How to add new items to the vending machine selection</h2>
+        <h2>Instructions:<h2>
+
+          <span> Enter the name of the new item, along with the number that will be used to select the item & the stock count.</span>
+
+
+        <div class="col-sm-6">
+
+        <h4>*Enter New Item Below*</h4>
+          <form action="/selection" method= "POST">
+          <fieldset>
+            <legend>Item - Name / Vending Number / Stock</legend>
+
+          <input type="text" name="name" value="" placeholder="Enter Item Name">
+          <input type="text" name="number" value="" placeholder="Enter Vending Number">
+          <input type="text" name="count" value="" placeholder="# In Stock">
+          <button type="submit" name="button">Submit Order</button>
+        </form>
+          <ul class="selection">
+          <% for(var i=0; i<selection.length; i++) {%>
+            <li class="order">
+              <span><%= selection[i].name %></span>
+              <span><%= selection[i].number %></span>
+              <span><%= selection[i].count %></span>
+              <span><%= selection[i].revenue %></span>
+            </li>
+          <% } %>
+          </ul>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
