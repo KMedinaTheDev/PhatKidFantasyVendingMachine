@@ -1,3 +1,4 @@
+![ScreenShot]("img/vmscreenshot.png")
 ## Installation
 
 1. Clone repo
