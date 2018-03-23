@@ -1,4 +1,4 @@
-![PKFV](img/vmscreenshot.png)
+![PKFV](public/img/vmscreenshot.png)
 ## Installation
 
 1. Clone repo
