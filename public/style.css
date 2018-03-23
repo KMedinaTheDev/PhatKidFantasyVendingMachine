@@ -1,11 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment');
+
 body{
-  padding-top:80px;
+  padding-top:10px;
   word-wrap:break-word;
+  background-image: url("img/vm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center top;
+  background-attachment:fixed;
+  height:1200px;
+}
+button{
+  float: left;
+  height:8em;
+  width: 8em;
+  z-index: 1;
+   position:fixed;
+  background-color:rgba(31, 160, 232, 0.0);
+  border: none;
+}
+h1{
+  font-family: 'Condiment', cursive;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 4em;
+  color: rgb(194, 187, 97);
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom:1%;
+  z-index: 1;
+ position:fixed;
+ width:100%;
+ height:100px;
+ padding-top: 30px;
+ background:rgba(31, 160, 232, 0.83);
+}
+h3{
+  margin-top: ;
+  margin-left: 2.3%;
+  color: rgb(230, 38, 92);
+  font-weight: 600;
+  font-family: 'Condiment', cursive;
+}
+h5{
+  float: left;
+  font-size: 1.4em;
+  color: white;
+  position:fixed;
+  z-index: 1;
+  margin-left: 33%;
+  margin-top: 2%;
+  font-family: 'Condiment', cursive;
+
 }
 img{
   height: 200px;
 }
+label{
+  float: left;
+}
+li{
+  font-size: .6em;
+  list-style: none;
+  padding: 10px;
+  font-weight: 600;
+  color: rgb(194, 187, 97);
+  border-left: 1px solid rgb(230, 38, 92);
+  border-bottom: 1px solid rgb(230, 38, 92);
+}
+p{
+  margin-left: 2.5%;
+  font-family: 'Condiment', cursive;
+  margin-top: -.5%;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: rgb(194, 187, 97);
+}
+p + a{
+  margin-right: 2%;
+  border: 1px solid rgb(230, 38, 92);
+}
+.container{
+  float: left;
+  border-radius: 5px;
 
-.drinks{
-  height:400px;
+
+}
+.login{
+ position:fixed;
+ z-index: 1;
+ margin-left: 90%;
+ border: 1px solid white;
+ border-radius: 4px;
+  margin-top: -.3%;
+}
+
+
+.pkfv-contain{
+  text-align: right;
+  margin-top: 23%;
+  margin-right: 5%;
+  float: left;
+  margin-left: 95%;
+  color: white;
+  width:25%;
+  border-radius: 5px;
+  background-color: black;
+  /* box-shadow: 5px 5px rgba(124, 124, 124, 0.69), -1em 0 .4em rgb(27, 233, 217); */
+
+}
+
+.selections{
+  margin-top: -10%;
+  margin-left: 40%;
+}
+#bugles{
+  background-image: url("img/bugles.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:14em;
+  height: 10em;
+  margin-top: 2%;
+  margin-left: -1%;
+
+}
+#caramello{
+  background-image: url("img/caramello.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin-top: -7%;
+  width:14em;
+
+}
+
+#cheetos{
+  height:10em;
+  margin-top: 1.5%;
+  margin-left: 10%;
+  background-image: url("img/cheetos.png");
+  background-size: cover;
+
+}
+#oreos{
+  background-image: url("img/oreos.png");
+  width: 14em;
+  height: 8em;
+  margin-top: 16.5%;
+  margin-left: 17%;
+
+}
+
+#snickers{
+  background-image: url("img/snickers1.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: 17.5%;
+  width: 14em;
+  /* background-color: red; */
 }

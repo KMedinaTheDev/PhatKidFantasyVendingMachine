@@ -9,44 +9,52 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="col-sm-6">
-      <div class="jumbotron text-center">
-        <h1>Phat Kid Fantasy Vending</h1>
-        <img src="img/vending.jpg" alt="Coffee">
-        <h5>Created by: KMedinaTheDev</h5>
+  <h1>Phat Kid Fantasy Vending</h1>
+  <div class="container ">
+
+      <div class="jumbotron text-left pkfv-contain">
+      <h4>*Click On The Item to Select An Item*</h4>
+      <ul>
+        <li>1 - Caramello</li>
+        <li>2 - Cheetos</li>
+        <li>3 - Snickers</li>
+        <li>4 - Bugles</li>
+        <li>5 - Oreos</li>
+      </ul>
+
       </div>
+
+
+    <div class="col-sm-6 selections">
+      <!-- <label for="caramello">Caramello</label> -->
+      <button id="caramello" value="Caramello" name="item" type="button"></button>
+      <!-- <label for="cheetos">Cheetos</label> -->
+      <button id="cheetos" value="Cheetos" name="item" type="button"></button>
+      <!-- <label for="snickers">Snickers</label> -->
+      <button id="snickers" value="Snickers" name="item" type="button"></button>
+      <!-- <label for="bugles">Bugles</label> -->
+      <button id="bugles" value="Bugles" name="item" type="button"></button>
+      <!-- <label for="oreos">Oreos</label> -->
+      <button id="oreos" value="Oreos" name="item" type="button"></button>
+    <h5>Created by: KMedinaTheDev</h5>
     </div>
+  <div col-sm-6 date>
+    <h2 class= "date"></h2>
+  </div>
 
-    <div class="col-sm-6">
-      <h4>*Click On The Item Number To Select An Item*</h4>
+  </div>
+  <div class="col-sm-6 login">
+    <h3>Admin Login</h3>
+    <p>Login or Signup:</p>
 
-      <!-- <form action="/selection" method= "POST"> -->
-      <label for="caramello">Caramello</label>
-      <button id="caramello" value="Caramello" name="item" type="button">001</button>
-      <label for="cheetos">Cheetos</label>
-      <button id="cheetos" value="Cheetos" name="item" type="button">002</button>
-      <label for="snickers">Snickers</label>
-      <button id="snickers" value="Snickers" name="item" type="button">003</button>
-      <label for="bugles">Bugles</label>
-      <button id="bugles" value="Bugles" name="item" type="button">004</button>
-      <label for="oreos">Oreos</label>
-      <button id="oreos" value="Oreos" name="item" type="button">005</button>
-      <!-- </form> -->
-
-    </div>
-    <div class="col-sm-6">
-      <h1>Admin Login</h1>
-      <p>Login or Signup:</p>
-
-      <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
-      <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
-
-    </div>
+    <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+    <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
 
   </div>
 
   <script type="text/javascript" src="main.js"></script>
+
+
 </body>
 
 </html>

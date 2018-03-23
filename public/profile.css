@@ -1,0 +1,26 @@
+body{
+  background-color: rgba(31, 160, 232, 0.83);
+
+}
+button{
+  width: 92%;
+  margin-left: .5%;
+}
+h2, h4, legend{
+  text-align: center;
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.selection{
+  border: 1px solid white;
+  border-radius: 5px;
+  width:60%;
+  margin-top: 2%;
+  margin-left: 15.5%;
+}

@@ -1,13 +1,14 @@
 //What can the user see?
- // 5 Items
- //what can the user do?
+// 5 Items
+//what can the user do?
 // choose and item
 // what does the user expect?
 //   receive the item selected
 
 // appending an event listener to every single thumb up
 // each time clicked the item should subtratc 1 from count and add 1 to revenue
-window.onload=function(){
+window.onload = function() {
+
   const caramello = document.getElementById("caramello");
   const cheetos = document.getElementById("cheetos");
   const snickers = document.getElementById("snickers");
@@ -15,104 +16,115 @@ window.onload=function(){
   const oreos = document.getElementById("oreos");
 
 
-caramello.addEventListener('click', function(){
-  alert("Caramello, the unsung hero of the candy isle!")
-        fetch('selection', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            'name': 'Caramello'
-          })
+  caramello.addEventListener('click', function() {
+    alert("Caramello, the unsung hero of the candy isle!")
+    fetch('selection', {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'name': 'Caramello'
         })
-        .then(response => {
-          if (response.ok) return response.json()
+      })
+      .then(response => {
+        if (response.ok) return response.json()
 
-        })
-        .then(data => {
+      })
+      .then(data => {
 
-          window.location.reload() //page reload (another get request is triggered)
-        })
+        window.location.reload() //page reload (another get request is triggered)
+      })
 
-});
-cheetos.addEventListener('click', function(){
-  alert("Cheetos, Dangerously cheesy!")
-        fetch('selection', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            'name': 'Cheetos'
-
-          })
-        })
-        .then(response => {
-          if (response.ok) return response.json()
-
-        })
-        .then(data => {
-
-          window.location.reload() //page reload (another get request is triggered)
-        })
-
-});
-snickers.addEventListener('click', function(){
-  alert("Snickers, Satisfies")
-        fetch('selection', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            'name': 'Snickers'
-          })
-        })
-        .then(response => {
-          if (response.ok) return response.json()
+  });
+  cheetos.addEventListener('click', function() {
+    alert("Cheetos, Dangerously cheesy!")
+    fetch('selection', {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'name': 'Cheetos'
 
         })
-        .then(data => {
+      })
+      .then(response => {
+        if (response.ok) return response.json()
 
-          window.location.reload() //page reload (another get request is triggered)
+      })
+      .then(data => {
+
+        window.location.reload() //page reload (another get request is triggered)
+      })
+
+  });
+  snickers.addEventListener('click', function() {
+    alert("Snickers, Satisfies")
+    fetch('selection', {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'name': 'Snickers'
         })
+      })
+      .then(response => {
+        if (response.ok) return response.json()
 
-});
-bugles.addEventListener('click', function(){
-  alert("Bugles, the taste shall rise again!")
-        fetch('selection', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            'name': 'Bugles'
-          })
+      })
+      .then(data => {
+
+        window.location.reload() //page reload (another get request is triggered)
+      })
+
+  });
+  bugles.addEventListener('click', function() {
+    alert("Bugles, the taste shall rise again!")
+    fetch('selection', {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'name': 'Bugles'
         })
-        .then(response => {
-          if (response.ok) return response.json()
+      })
+      .then(response => {
+        if (response.ok) return response.json()
 
+      })
+      .then(data => {
+
+        window.location.reload() //page reload (another get request is triggered)
+      })
+
+  });
+  oreos.addEventListener('click', function() {
+    alert("Oreos, Milk's Favorite Cookie")
+    fetch('selection', {
+        method: 'put',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'name': 'Oreos'
         })
-        .then(data => {
+      })
+      .then(response => {
+        if (response.ok) return response.json()
 
-          window.location.reload() //page reload (another get request is triggered)
-        })
+      })
+      .then(data => {
 
-});
-oreos.addEventListener('click', function(){
-  alert("Oreos, Milk's Favorite Cookie")
-        fetch('selection', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            'name': 'Oreos'
-          })
-        })
-        .then(response => {
-          if (response.ok) return response.json()
+        window.location.reload() //page reload (another get request is triggered)
+      })
 
-        })
-        .then(data => {
-
-          window.location.reload() //page reload (another get request is triggered)
-        })
-
-});
-
+  });
 }
+
+
 //appending an event listener toe very single trash can
 // Array.from(trash).forEach(function(element) {
 //       element.addEventListener('click', function(){
